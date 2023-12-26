@@ -20,7 +20,7 @@ const Body=()=>{
         const  resData=json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setlistOfRes(resData);
         setFilteredRes(resData);
-        
+
     
     }
 
