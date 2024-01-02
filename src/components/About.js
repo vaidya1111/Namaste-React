@@ -24,7 +24,6 @@ class About extends React.Component{
                   <h2>Namaste React webseries </h2>
                   <UserClass/>
                   <UserClass/>
-                  
             </div>
             );
       }
