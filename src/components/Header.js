@@ -6,25 +6,26 @@ const Header=()=>{
     
     const [loginStatus,setLoginStatus]=useState("Login");
     return(
-        <div className="header">
+        <div className="flex justify-between shadow-lg mb-2">
             <div className="logo-container">
-                <img className="logo" src={LOGO_URL}/>            
+                <img className="w-40" src={LOGO_URL}/>            
             </div>
-            <div className="nav-items">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
+            <div className="flex items-center">
+                <ul className="flex p-4 m-4">
+                    <li className="px-4">
+                        <Link className="font-bold" to="/">Home</Link>
                     </li>
-                    <li>
-                        <Link to="/grocery">Grocery</Link>
+                    <li className="px-4">
+                        <Link className="font-bold" to="/grocery">Grocery</Link>
                     </li>
-                    <li>
-                        <Link to="/about">About Us</Link>
+                    <li className="px-4">
+                        <Link className="font-bold" to="/about">About Us</Link>
                     </li>
-                    <li>
-                         <Link to="/contact">Contact Us</Link>
+                    <li className="px-4">
+                         <Link className="font-bold" to="/contact">Contact Us</Link>
                     </li>
-                    <li>Cart</li>
+                    <li className="px-4 font-bold">Cart</li>
+                    <li className="px-4 font-bold">
                     <button className="login-btn" onClick={()=>{
                         loginStatus=== "Login" ? 
                         setLoginStatus("Logout") : 
@@ -32,6 +33,7 @@ const Header=()=>{
                     }}>
                         {loginStatus}
                     </button>
+                    </li>
                 </ul>
             </div>
         </div>
