@@ -8,6 +8,7 @@ const Body=()=>{
     const [listOfRes,setlistOfRes]=useState([]);
     const [filteredRes,setFilteredRes]=useState([]);
     const[searchText,setSearchText]= useState("");
+
     const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
     useEffect(()=>{
@@ -67,7 +68,6 @@ const Body=()=>{
                                     {
                                         restaurant.info.isOpen ? <RestaurantCardPromoted  resData={restaurant}/> :  <RestaurantCard  resData={restaurant}/>
                                     }
-                                  {/* <RestaurantCard  resData={restaurant}/> */}
                                 </Link>
                             )
                 })
