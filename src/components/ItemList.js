@@ -1,8 +1,6 @@
 import { ITEM_IMAGE_URL } from "../utils/constants";
 
 const ItemList=({items})=>{
-    console.log(items)
-  
     return (
         <div>
             {
@@ -20,7 +18,7 @@ const ItemList=({items})=>{
                                 </div>
                                 <div className="border rounded-lg bg-white">
                                     <img className="text-right w-28 p-3" src={ITEM_IMAGE_URL+item.card.info.imageId}/>
-                                    <button className="text-green-600 border border-gray-200 px-6 py-1 rounded-lg font-bold">ADD</button>
+                                    <button className="text-green-600 border border-gray-200 px-6 py-2 rounded-lg font-bold shadow-lg text-xs">ADD +</button>
                                 </div>
                                
                             </div>
